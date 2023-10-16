@@ -108,8 +108,3 @@ paste("my name is", name ,"my course is", course)
 #git branch -a
 #git merge origin/master
  
-# git commit -m "first commit"
-# 
-# 
-# git push -u origin master //if first time
-# git push origin master //if second time and more
