@@ -104,14 +104,10 @@ paste("my name is", name ,"my course is", course)
 # git remote add origin https://github.com/xoxolrjj/Reviewer.git
 #git remote -v
 #git push -u origin master 
-
 #git fetch origin
-#
-
-
-# git config --global user.email "xwonzws@gmail.com" depnds ~
-# git config --global user.name "xoxolrjj"
-# 
+#git branch -a
+#git merge origin/master
+ 
 # git commit -m "first commit"
 # 
 # 
