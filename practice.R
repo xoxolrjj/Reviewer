@@ -93,6 +93,8 @@ order(vectorA)
 relative_Name <- list("pedro","juan","brian","jireh","jowi")
 relative_Name
 
+relative_Name[c(2,4)]
+ 
 relative_Name <- append(relative_Name,c("anna","jane"), after =3 )
 relative_Name
 
