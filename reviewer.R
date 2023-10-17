@@ -98,8 +98,10 @@ paste("my name is", name ,"my course is", course)
 # first check branches, if youre branch is master and you only have main branch in your github you can use git branch -m master main
 
 
+
 # git init
 # git add .
+ 
 # git commit -m "first commit"
 # git remote add origin https://github.com/xoxolrjj/Reviewer.git
 #git remote -v
@@ -108,6 +110,11 @@ paste("my name is", name ,"my course is", course)
 #git branch -a
 #git merge origin/master
  
+
+
+# git init
+# git add .
+# git pull https://github.com/xoxolrjj/Reviewer.git // if you want to put your code back into folder 
 #R data structures
 #Using Vectors 
 
@@ -214,4 +221,74 @@ num7 <- seq(-3,2)
 num7
 num7[2] <- 0
 num7
+
+month <- c("jan","feb","march","april","may","june")
+price_per_liter <- c(52.50,57.25,60.00,65.00,74.25,54.00)
+purchase_quantatity <- c(25,30,40,50,10,45)
  
+df <- data.frame(month,price_per_liter,purchase_quantatity)
+
+weighted.mean(price_per_liter,purchase_quantatity)
+data <- c(length(rivers), sum(rivers), mean(rivers), median(rivers), var(rivers),
+          sd(rivers), min(rivers), max(rivers))
+data
+
+Power_Ranking <- c(1:25)
+celebrity_name <- c("Tom Cruise", "Rolling Stone", "Oprah Winfrey", "U2", "Tiger Woods", "Steven Spielberg", "Howard Stern", "50 Cent", 
+                    "Cast of Sopranos", "Dan Brown", "Bruce Springsteen", "Donald Trump", "Muhammad Ali", "Paul McCartney", "George Lucas",
+                    "Elton John", "David Letterman", "Phil Mickelson", "J.K Rowling", "Bradd Pitt", "Peter Jackson", "Dr. Phil McGraw", "Jay   Lenon", "Celine Dion", "Kobe Bryant")
+pay <- c(67,90,225,110,90,332,302,41,52,88,55,44,55,40,233,34,40,47,75,25,39,45,32,40,31)
+
+Power_Ranking[19] <-15
+Power_Ranking
+pay[19] <- 90
+pay
+
+
+PowerRanking <- data.frame(Power_Ranking,celebrity_name,pay)
+
+
+csv_file <-  "PowerRanking.csv"
+
+write.csv(PowerRanking, file = csv_file, row.names = FALSE)
+
+PowerRanking <- read.csv("PowerRanking.csv")
+
+PowerRanking[10:20,]
+
+save(PowerRanking,file ="Ranks.RData")
+load("Ranks.RData")
+ 
+
+library(readxl)
+hotels_vienna <- read_excel("hotels-vienna.xlsx")
+View(hotels_vienna)
+
+dim(hotels_vienna)
+
+colnames <- hotels_vienna[c(1,6,7,9,22,24)]
+colnames
+
+save(colnames, file = "new.RData")
+load("new.RData")
+
+head(colnames,6)
+tail(colnames,6)
+
+
+vegetable_list <- list("cabbage","onion","tomato","carrots","banana","potato","garlic","eggplant", "cucumber","spinach")
+vegetable_list
+
+vegetable_list <-append(vegetable_list, c("calamansi", "cucumber"))
+vegetable_list
+
+vegetable_list <- append(vegetable_list, c("a","B","c","d"), after =5)
+vegetable_list
+
+length(vegetable_list)
+
+vegetable_list <- vegetable_list[c(-5,-10,-15)]
+vegetable_list
+
+
+#reansweing
